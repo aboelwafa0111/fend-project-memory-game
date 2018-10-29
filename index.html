@@ -17,12 +17,15 @@
 
         <section class="score-panel">
         	<ul class="stars">
+                <!-- Timer -->
+                <span class="clock" >0:00</span>
+                <!-- Timer -->
         		<li><i class="fa fa-star"></i></li>
         		<li><i class="fa fa-star"></i></li>
         		<li><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<span class="moves">3</span> Moves
+        	<span class="moves">0</span> Moves
 
             <div class="restart">
         		<i class="fa fa-repeat"></i>
@@ -80,6 +83,28 @@
             </li>
         </ul>
     </div>
+
+
+
+    <div class="modal_background hide">
+      <div class="modal_body">
+        <div class="modal_header">
+          <h1 class="modal_title">Game Details</h1>
+          <span class="modal_close">x</span>
+        </div>
+        <div class="modal_data">
+          <span class="modal_time">Time</span>
+          <span class="modal_stars">Stars</span>
+          <span class="modal_moves">Moves</span>
+        </div>
+        <div class="modal_buttons">
+          <button class="modal_button modal_cancel">Cancel</button>
+          <button class="modal_button modal_replay">Play / Replay</button>
+        </div>
+      </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/app.js"></script>
 </body>
