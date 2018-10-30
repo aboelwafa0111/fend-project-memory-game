@@ -69,13 +69,13 @@ function checkForMatch() {
     toggledCards = [];
     moves = moves - 1; // Dont add moves if a match
     matched = matched + 1;
-    console.log('Two cards match!');
+    // console.log('Two cards match!');
     if (matched === totalPairs) {
       gameOver();
     }
   } else {
     setTimeout(function () {
-      console.log('Not a match!');
+      // console.log('Not a match!');
       toggleCard(toggledCards[0]);
       toggleCard(toggledCards[1]);
       toggledCards = [];
@@ -102,7 +102,7 @@ function toggleCard(clickTarget) {
 // add card to array function
 function addToggleCard(clickTarget) {
   toggledCards.push(clickTarget);
-  console.log(toggledCards);
+  // console.log(toggledCards);
 
   if (clockOff) {
     startClock();
@@ -137,7 +137,7 @@ function startClock() {
   clockId = setInterval(() => {
     time++;
     displayTime();
-    console.log(time);
+    // console.log(time);
 
   }, 1000);
 }
@@ -263,7 +263,7 @@ function getStars() {
       starCount--;
     }
   }
-  console.log(starCount);
+  // console.log(starCount);
   return starCount;
 }
 
@@ -274,7 +274,7 @@ document.querySelector('.modal_cancel').addEventListener('click', () => {
 
 
 document.querySelector('.modal_replay').addEventListener('click', () => {
-  console.log('replay');
+  // console.log('replay');
   resetCardClasses();
 });
 
@@ -293,6 +293,5 @@ deck.addEventListener('click', event => {
       addMove();
       checkScore();
     }
-    console.log("Awesome");
   }
 });
