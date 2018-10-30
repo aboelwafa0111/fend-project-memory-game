@@ -11,8 +11,6 @@
 
 
 const deck = document.querySelector('.deck');
-
-
 let toggledCards = [];
 let moves = 0;
 let clockOff = true;
@@ -22,7 +20,6 @@ let matched = 0;
 
 
 // Create a list that holds all of your cards
-
 function shuffleDeck() {
   const cardsToShuffle = Array.from(document.querySelectorAll('.deck li'));
   const shuffledCards = shuffle(cardsToShuffle);
