@@ -32,7 +32,7 @@ shuffleDeck();
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
-  var currentIndex = array.length,
+  let currentIndex = array.length,
     temporaryValue, randomIndex;
 
   while (currentIndex !== 0) {
@@ -192,7 +192,7 @@ function resetStars() {
 
 
 function resetGame() {
-  resetClockAndTime();
+  location.reload(); //method to repair reset
   resetCardClasses();
   resetMoves();
   resetStars();
@@ -251,7 +251,7 @@ function writeModalStats() {
   const stars = getStars();
 
   timeStat.innerHTML = `Time = ${clockTime}`;
-  movesStat.innerHTML = `Moves = ${moves}`;
+  movesStat.innerHTML = `Moves = ${moves+1}`;
   starsStat.innerHTML = `Stars = ${stars}`;
 }
 
